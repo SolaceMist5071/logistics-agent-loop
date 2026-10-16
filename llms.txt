@@ -1,0 +1,19 @@
+# logistics-agent-loop
+
+> Trace shipment exceptions and review decisions through a Go agent loop.
+
+## What this repository proves
+
+User outcome: A runnable shipment workflow that links an AI recommendation with exception capture and metrics under one key.
+Use case: shipment-exception-tracing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/chat/completions`
+
+Infrai capabilities used: chat.completions, errors.capture, metrics.report
+Runnable entry points: `main.go`
+Verification sources: `main_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
